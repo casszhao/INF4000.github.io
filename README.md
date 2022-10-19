@@ -7,8 +7,14 @@ Learning objective:
 * examples
 
 
-Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. How to do it? Let s start.
+Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
+ 
+![alt text][logo]
 
+[logo]: [https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png](https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png) "Logo Title Text 2"
+How to do it? Let s start.
+
+If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
 ## Topic one
 
 ```example code```
