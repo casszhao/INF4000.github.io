@@ -51,8 +51,7 @@ Let s see her code
 ```
 require(ggplot2)
 #> Loading required package: ggplot2
-ggplot(data = iris, aes(Species, Sepal.Length)) +
-geom_boxplot(aes(colour = Sepal.Width < 3.2), varwidth = TRUE)
+ggplot(data = iris, aes(Species, Sepal.Length)) + geom_boxplot(aes(colour = Sepal.Width < 3.2), varwidth = TRUE)
 #> Warning: position_dodge requires non-overlapping x intervals
 ```
 
