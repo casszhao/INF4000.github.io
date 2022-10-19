@@ -8,7 +8,8 @@ Learning objective:
 
 
 Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
-![alt text](https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png)
+![a](https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png)
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png" width="200" />
 ![a](https://github.com/casszhao/INF4000.github.io/blob/main/xfact_vio.png)
 
 If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
