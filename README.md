@@ -120,8 +120,16 @@ other tips:
 - 
 
 ## Other useful links
-Hands-On Programming with R
-[Debugging R Code](https://rstudio-education.github.io/hopr/debug.html)
+[Hands-On Programming with R(]https://rstudio-education.github.io/hopr/debug.html)
 [A case study in debugging R](https://github.com/karawoo/2019-01-17-rstudioconf/blob/master/woo_rstudioconf_2019.pdf)
+[Debugging R Code](https://rstats.wtf/debugging-r-code.html)
+[Advanced R debugging](https://adv-r.hadley.nz/debugging.html)
+[Debugging with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE)
+
+[github 1](https://github.com/annloh/fixURcode/tree/master/docs)
+[github 2](https://github.com/hhy37/webinars-57-debugging-in-rstudio-)
+[github 1](https://github.com/theavanrossum/debuggerRMarkdownLesson)
+[github 1](https://github.com/RodrigRicardo/debuggingRStudio)
+[git](https://github.com/ColinFay/debugin)
 
 
