@@ -9,11 +9,11 @@ Learning objective:
 
 Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
 
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png" width="2000" />
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/xfact_vio.png" width="1000" />
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazDigiMu_vio.png" width="1500" />
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazPantry_vio.png" width="900" />
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazInstr_vio.png" width="600" />
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png" width="300" />
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/xfact_vio.png" width="300" />
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazDigiMu_vio.png" width="300" />
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazPantry_vio.png" width="300" />
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazInstr_vio.png" width="400" />
 <img src="https://github.com/casszhao/INF4000.github.io/blob/main/agnews_vio.png" width="400" />
 
 If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
