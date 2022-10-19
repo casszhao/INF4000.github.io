@@ -2,13 +2,18 @@
 # Trouble shooting with Google: where the programming starts
 
 Learning objective:
-* Note this week is NOT about being advance at R studio
+* Note this week is NOT about advanced techniques or skills for R studio
 * To read error messages
 * available source to start search for your bug
 * examples
 
+## Case study: Trouble shooting with via play arounding
+Tips: when debugging, do not afraid try
+One question from last week:  
 
-Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
+
+## Case study: Trouble shooting with Google
+Let s say you want to present the time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
 
 <img src="https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png" width="300" />
 <img src="https://github.com/casszhao/INF4000.github.io/blob/main/xfact_vio.png" width="300" />
@@ -36,5 +41,23 @@ Techniques not only for R
 
 Do a fancy code with bug and find 
 
+
+小组活动
+Now, let s practice.
+
+Let s demonstrate the topic of a article. 
+
+--> search
+--> world cloud
+--> how to do world cloud
+
+
+
+运用“高科技”
+
+other tips:
+- explain to yourself
+- stackoverflow
+- 
 
 
