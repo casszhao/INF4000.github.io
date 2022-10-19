@@ -24,6 +24,3 @@ Techniques not only for R
 Do a fancy code with bug and find 
 
 
-
-##  TTTTTTT DDDD
-##FFFFFFFF
