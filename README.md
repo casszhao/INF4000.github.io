@@ -8,14 +8,15 @@ Learning objective:
 * examples
 
 When see errors, do not panic.
+
 Coders/data scientists, fix errors and mistakes, so-called ``debug'', all the time. Today, let s look at debugging.
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg" width="600" />
+![a](https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg "Logo Title Text 1")
 There are two ways you can make your life easier. The first is knowing the tools at your disposal in RStudio to debug errors. RStudio provides a variety of tools to help you diagnose the problem at its source and come up with a solution as quick as possible. The second is knowing how to write functions that return clear yet detailed errors using condition handling. This post will walk through both of these topics so that you can become better at handling errors when writing your own code as well as working with errors in someone else’s code.
 
-Debugging Errors
-The following general strategy can be applied to debug an error:
+After a while of coding, you will know how and where to start to fix the problem. Before that, you can try following general strategies to debug an error:
     1. Google 
-        ◦ Many times it is a common error with a known solution
+        ◦ Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
+        
     2. Make it repeatable 
         ◦ Create a minimal, reproducible example (e.g. reprex) using simple data
         ◦ Note which inputs don’t trigger the error
