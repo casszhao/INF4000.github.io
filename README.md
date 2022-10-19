@@ -7,6 +7,32 @@ Learning objective:
 * available source to start search for your bug
 * examples
 
+When see errors, do not panic.
+Coders/data scientists, fix errors and mistakes, so-called ``debug'', all the time. Today, let s look at debugging.
+<img src="https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg" width="600" />
+There are two ways you can make your life easier. The first is knowing the tools at your disposal in RStudio to debug errors. RStudio provides a variety of tools to help you diagnose the problem at its source and come up with a solution as quick as possible. The second is knowing how to write functions that return clear yet detailed errors using condition handling. This post will walk through both of these topics so that you can become better at handling errors when writing your own code as well as working with errors in someone else’s code.
+
+Debugging Errors
+The following general strategy can be applied to debug an error:
+    1. Google 
+        ◦ Many times it is a common error with a known solution
+    2. Make it repeatable 
+        ◦ Create a minimal, reproducible example (e.g. reprex) using simple data
+        ◦ Note which inputs don’t trigger the error
+        ◦ If not already done, write simple tests to reduce chances of creating a new bug
+    3. Figure out where the error is 
+        ◦ Use the “scientific method”
+        ◦ Hypothesize, test with experiments, and record results
+        ◦ If needed, ask someone else for a second pair of eyes to review
+    4. Fix it and test it
+These four steps should be followed each time you encounter an unexpected error in a function. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
+    1. Begin running the code.
+    2. Stop the code where you suspect the bug/problem is arising.
+    3. Look and/or walk through the code, step-by-step at that point.
+This can be done ad-hoc in a separate R script containing the function code, or using several built-in tools in RStudio.
+
+
+
 ## Case study: Trouble shooting with via play arounding
 Tips: when debugging, do not afraid try
 One question from last week:  
@@ -59,5 +85,10 @@ other tips:
 - explain to yourself
 - stackoverflow
 - 
+
+## Other useful links
+Hands-On Programming with R
+[Debugging R Code](https://rstudio-education.github.io/hopr/debug.html)
+[A case study in debugging R](https://github.com/karawoo/2019-01-17-rstudioconf/blob/master/woo_rstudioconf_2019.pdf)
 
 
