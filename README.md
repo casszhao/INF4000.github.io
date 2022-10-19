@@ -6,6 +6,9 @@ Learning objective:
 * available source to start search for your bug
 * examples
 
+
+Let s say you want to present time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. How to do it? Let s start.
+
 ## Topic one
 
 ```example code```
@@ -22,5 +25,6 @@ cheatsheet for [github pages](https://github.com/adam-p/markdown-here/wiki/Markd
 Techniques not only for R
 
 Do a fancy code with bug and find 
+
 
 
