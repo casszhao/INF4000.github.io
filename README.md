@@ -1,6 +1,7 @@
 # INF4000 Week 5: 
 # Trouble shooting with Google: where the programming starts
-![a](https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg)
+![a](https://github.com/casszhao/INF4000.github.io/raw/main/debugging.jpg)
+
 
 Note that this week is 
 * **NOT** about advanced techniques and skills for R studio
@@ -64,7 +65,9 @@ When debugging, do not afraid trying or playing around. Sometime you solve the p
 
 One question a student asked from last week: how to show a full range of coordinates.
 
-![a](https://github.com/casszhao/INF4000.github.io/blob/main/coordinator.png)
+![a](./coordinator.png)
+
+![a](coordinator.png)
 
 why the coordinate does not show "2020"?
 
