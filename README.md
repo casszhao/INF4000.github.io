@@ -18,8 +18,13 @@ There are two ways you can make your life easier. The first is knowing the tools
 
 After a while of coding, you will know how and where to start to fix the problem. Before that, you can try following general strategies to debug an error:
 
+
 1. **Google**
- Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
+ * Read the ERROR MESSAGE! Most error message does tell you what the problem is. Google it.
+ * Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
+ * Change a way to describe your problem if you cannot find the solution. 
+ * Sometime, results from Google costs a lot of time to filter (particularly, when you ask in a not so good way), try other professional platforms, such as: 
+ ** w3schools.com, codeproject.com
         
 2. **Make it repeatable**
  * Create a minimal, reproducible example (e.g. reprex) using simple data
