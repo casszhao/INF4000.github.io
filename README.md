@@ -13,10 +13,8 @@ Learning objective:
 
 When see errors, do not panic.
 
-Coders/data scientists, fix errors and mistakes, so-called "debug", all the time. Today, let s look at debugging.
+Coders/data scientists, fix errors and mistakes, all the time. Today, let s talk about how to troubleshoot yourself.
 
-
-There are two ways you can make your life easier. The first is knowing the tools at your disposal in RStudio to debug errors. RStudio provides a variety of tools to help you diagnose the problem at its source and come up with a solution as quick as possible. The second is knowing how to write functions that return clear yet detailed errors using condition handling. This post will walk through both of these topics so that you can become better at handling errors when writing your own code as well as working with errors in someone else’s code.
 
 After a while of coding, you will know how and where to start to fix the problem. Before that, you can try following general strategies to debug an error:
 
@@ -49,13 +47,24 @@ These four steps should be followed each time you encounter an unexpected error 
  This can be done ad-hoc in a separate R script containing the function code, or using several built-in tools in RStudio.
 
 
+## Case study: Trouble shooting with via playing around
+
+When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
+
+
+One question a student asked from last week: how to show a full range of coordinates.
+
+![a](https://github.com/casszhao/INF4000.github.io/blob/main/coordinator.png)
+
+why the coordinate does not show "2020"?
 
 ## Case study: Boxplot
 Let’s look at an example boxplot to demonstrate the use of these tools. Mary trys to produce boxplots where the colour represents the category, these appear overlapping if varwidth is set to TRUE
 
-![a](https://github.com/casszhao/INF4000.github.io/blob/main/boxplot1.png)
 
-Let s see her code
+
+
+Let s check the code 
 ```
 require(ggplot2)
 #> Loading required package: ggplot2
@@ -67,9 +76,7 @@ ggplot(data = iris, aes(Species, Sepal.Length)) + geom_boxplot(aes(colour = Sepa
 Next, let’s look at an example function.
 
 
-## Case study: Trouble shooting with via play arounding
-Tips: when debugging, do not afraid try
-One question from last week: how to show a full range of coordinates.
+
 
 
 
