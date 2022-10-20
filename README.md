@@ -1,5 +1,7 @@
 # INF4000 Week 5: 
 # Trouble shooting with Google: where the programming starts
+![a](https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg)
+
 
 Learning objective:
 * Note this week is NOT about advanced techniques or skills for R studio
@@ -7,7 +9,7 @@ Learning objective:
 * available source to start search for your bug
 * examples
 
-![a](https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg)
+
 
 When see errors, do not panic.
 
@@ -23,8 +25,7 @@ After a while of coding, you will know how and where to start to fix the problem
  * Read the ERROR MESSAGE! Most error message does tell you what the problem is. Google it.
  * Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
  * Change a way to describe your problem if you cannot find the solution. 
- * Sometime, results from Google costs a lot of time to filter (particularly, when you ask in a not so good way), try other professional platforms, such as: 
- ** w3schools.com, codeproject.com
+ * Sometime, results from Google costs a lot of time to filter (particularly, when you ask in a not so good way), try other professional platforms, such as: stackoverflow, w3schools.com, codeproject.com
         
 2. **Make it repeatable**
  * Create a minimal, reproducible example (e.g. reprex) using simple data
@@ -37,7 +38,9 @@ After a while of coding, you will know how and where to start to fix the problem
  * If needed, ask someone else for a second pair of eyes to review
 
 4. **Fix it and test it**
- These four steps should be followed each time you encounter an unexpected error in a function. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
+
+
+These four steps should be followed each time you encounter an unexpected error in a function. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
 
  * Begin running the code.
  * Stop the code where you suspect the bug/problem is arising.
@@ -125,11 +128,11 @@ other tips:
 - 
 
 ## Other useful links
-[Hands-On Programming with R(]https://rstudio-education.github.io/hopr/debug.html)
-[A case study in debugging R](https://github.com/karawoo/2019-01-17-rstudioconf/blob/master/woo_rstudioconf_2019.pdf)
-[Debugging R Code](https://rstats.wtf/debugging-r-code.html)
-[Advanced R debugging](https://adv-r.hadley.nz/debugging.html)
-[Debugging with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE)
+*[Hands-On Programming with R(]https://rstudio-education.github.io/hopr/debug.html)
+*[A case study in debugging R](https://github.com/karawoo/2019-01-17-rstudioconf/blob/master/woo_rstudioconf_2019.pdf)
+*[Debugging R Code](https://rstats.wtf/debugging-r-code.html)
+*[Advanced R debugging](https://adv-r.hadley.nz/debugging.html)
+*[Debugging with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE)
 
 [github 1](https://github.com/annloh/fixURcode/tree/master/docs)
 [github 2](https://github.com/hhy37/webinars-57-debugging-in-rstudio-)
