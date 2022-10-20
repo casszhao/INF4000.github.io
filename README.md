@@ -92,14 +92,22 @@ ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
        scale_x_continuous(breaks=seq(2000,2020,10))
 ```
 
-So the problem is about the coordinate. Let s investigate line by line. Obviously, the first a few lines probably should be fine, as they are just indicate the data and set up titles. E.g., ```aes(year, NY.GDP.PCAP.KD.ZG)```, ``` x= ``` and ``` y= ``` just indicate data, should be fine. Similar for ```title=```, ```colour=``` and ```caption=```.
+So the problem is about the coordinate. Let s investigate line by line. Obviously, the first few lines should be fine, as they just indicate the data or set up textual titles. E.g., ```aes(year, NY.GDP.PCAP.KD.ZG)```, ``` x= ``` and ``` y= ``` just indicate data, should be fine. Similar for ```title=```, ```colour=``` and ```caption=```.
 
 So we initially focus on 
-Within the code, lines regarding coordinate are 
-``` scale_x_continuous(breaks=seq(2000,2020,10))
+Within the code, lines regarding coordinate are
+
+```r
+scale_x_continuous(breaks=seq(2000,2020,10))
 ```
 
-Let s dig into this line by just google it.
+We go back to [WEEK 4 material](https://learn-eu-central-1-prod-fleet01-xythos.content.blackboardcdn.com/5c8f80ee07c44/23020779?X-Blackboard-Expiration=1666288800000&X-Blackboard-Signature=o5qXXbm9O26%2BiPR%2F5s6AHirnuRvQYIYOEuNWBzzWZxU%3D&X-Blackboard-Client-Id=309431&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Week4.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEIf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQD8fSzPc3zLd2TAfFQxIBZhbzLb3G0nBwWqukT%2F2quPswIgcEqute5hko4wRc7VfHmtZR%2BBZeo9FR6R2lxgjVuGybwq1gQIYBACGgw2MzU1Njc5MjQxODMiDIkO%2BQUZ4BBNO9Xx%2FSqzBBCB6%2Ft3YlkLk5oHKnJOrpVorcx2pZYg1cgYgKLkBUmLhUlFvNVnmhwGlyLbPCWH6KYF1tKpSGlyJ0ekvq5ZKsDZQQlb%2Fq3GEO4pJoPjt6acKK0NOjprbSS3KfMNwrmGCE3w86lh32iZlyR7%2FQUstOGAZoP6qhmqMnhYCxftraL0NN76Klvg4eKo0jcvFeQhlY3Bew9UrjTYGmk2O%2FBJ7B%2BDGg5msmM7bLpIsvOtvleZSgZs8o8I8%2B3fP%2BvQRqiZTRd96TnZVScZV9XLUAZDIiubVI17dve6TethvZkIB0Sp2MgQHTda50e3%2Fd8V91sNL%2FG8L6d3pP27RX%2FGELg4p5B9yTYstwa3YvgT%2F4OV%2BcII9DwE4oqxW9VHPoJAWNZ3tpDd46fgCOstK5FElQMwP2SQp6TwFXTW%2FVRYvbEB51VEHs9%2FbbNGnShRODbL3lwk%2FImh8Yb5U%2By%2FJ2Ublwd%2FfAtFp3Y9IninNlg%2BGJrJU8y0Db4khbX2xbqVxMmm6IeXCwqZXyjEMU4wkXLzY0gMeEMbvjJEFdE83wFIFyY4B87nn412VlP0sG%2FPLanqJAK%2Bt%2F6BJvlh8z1VtGXZiVoIiRdmE6KUQ6w5wF8bzqYIekZ5YTVu8ZTUhVQZjD25E42JOEnNibT4szmxFWvyaqkTpEgWf8uAT4O0RIw7SN2POsRh%2FOmRMEWS%2FVlkMxg2COtc%2FoEIjkIvH77OAG8kfAGkyxpJAKxwM4CANqmOfUfmE8vQQ0LeMP24xZoGOqkBYauk5aMmeccZXtdG2TziK9nTYmhwrziivSm7JCGamcctwrhpmK8JrI65fscjcJF%2F8N2zVPmLYwkgW4xmTstJVSHsh51pvXfJuaaYEYZoWNI%2BNnNl7XSjUoXW1zfNyCH%2BzrfQKq68H6Ynk9qqE4qqGOYEWN2zUmLkvZW%2FAZ81lcoSoNaJYHrl2R%2FpJ8BsFI%2Fsvs8VVB4VkALxMDVI5aNp6C8WdnsIap%2Bp9Q%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20221020T120000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLSY4K5COW%2F20221020%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=ac3f1ad83163380cc41b1a50892f0923deac28d6bf3b413388b503bf9a3f08ab) to see what it says about ```scale_x_continuous``` (```control+F``` to locate it in the file):
+> You can modify which values are shown on the axis of a continuous variable using the **scale_x_continuous** for X axis and scale_y_continuous for Y axis. That function expects a list of numerical values on which to draw axis numbers, and this can easily be created with the seq function. You can use these functions in any plot, not just those with faceting enabled. The example below reduces the number of values shown on the X axis to create a cleaner plot.
+
+
+Let s dig into this line/argument by just googling it --> ["scale_x_continuous"]([https://www.google.com/search?q=scale_x_continuous(breaks%3Dseq(2000%2C2020%2C10))&oq=scale_x_continuous(breaks%3Dseq(2000%2C2020%2C10))&aqs=chrome.0.69i59.425j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=scale_x_continuous&sxsrf=ALiCzsZ0siBuC0xWiandh7D2MpLGYriRyA%3A1666300368588&ei=0LlRY7W1I_iE9u8Py8uA-A0&ved=0ahUKEwi13bvM3O_6AhV4gv0HHcslAN8Q4dUDCA8&uact=5&oq=scale_x_continuous&gs_lp=Egdnd3Mtd2l6uAED-AEC-AEBMgQQIxgnMgQQABhDMgQQABhDMgQQABhDMgQQABhDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI1wVQAFgAcAB4AcgBAJABAJgBXqABXqoBATHiAwQgTRgB4gMEIEEYAOIDBCBGGACIBgE&sclient=gws-wiz))
+
+We go for the first result retrieved. It is possible that you have got something retrieved 
 
 Let's check the "year" in the original dataset. We sort the 
 
