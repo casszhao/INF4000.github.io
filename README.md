@@ -2,9 +2,14 @@
 # Trouble shooting with Google: where the programming starts
 ![a](https://github.com/casszhao/INF4000.github.io/blob/main/debugging.jpg)
 
+Note that this week is 
+* **NOT** about advanced techniques and skills for R studio
+* **NOT** about following each step and reproducing each result or graphs
+* about practice solving problems **on your own**
+
 
 Learning objective:
-* Note this week is NOT about advanced techniques or skills for R studio
+
 * To read error messages
 * available source to start search for your bug
 * examples
@@ -24,7 +29,12 @@ After a while of coding, you will know how and where to start to fix the problem
  * Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
  * Change a way to describe your problem if you cannot find the solution. 
  * Sometime, results from Google costs a lot of time to filter (particularly, when you ask in a not so good way), try other professional platforms, such as: stackoverflow, w3schools.com, codeproject.com
+
+2. **Go back to your dataset**
+
+Just check your data, even it is readable and loadable.
         
+       
 2. **Make it repeatable**
  * Create a minimal, reproducible example (e.g. reprex) using simple data
  * Note which inputs don’t trigger the error
@@ -58,19 +68,24 @@ One question a student asked from last week: how to show a full range of coordin
 
 why the coordinate does not show "2020"?
 
-## Case study: Boxplot
-Let’s look at an example boxplot to demonstrate the use of these tools. Mary trys to produce boxplots where the colour represents the category, these appear overlapping if varwidth is set to TRUE
-
-
-
-
 Let s check the code 
+
 ```
-require(ggplot2)
-#> Loading required package: ggplot2
-ggplot(data = iris, aes(Species, Sepal.Length)) + geom_boxplot(aes(colour = Sepal.Width < 3.2), varwidth = TRUE)
-#> Warning: position_dodge requires non-overlapping x intervals
+ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
+  geom_point(aes(colour =country)) +
+  facet_grid(region ~ income) +
+  labs(x="Year", y="GDP Per Capita Growth (annual %)",
+       title='Faceting test', subtitle = 'Facet on both axes',
+       colour="Country",
+       caption='World Development Indicators, World Bank')+
+  scale_x_continuous(breaks=seq(2000,2020,10))
 ```
+
+If 
+
+Let's check the "year" in the original dataset. We sort the 
+
+![a](https://github.com/casszhao/INF4000.github.io/blob/main/coordinator.png)
 
 ## Case study: Fuction
 Next, let’s look at an example function.
