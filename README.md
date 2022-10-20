@@ -3,17 +3,23 @@
 ![a](https://github.com/casszhao/INF4000.github.io/raw/main/debugging.jpg)
 
 
-Note that this week is 
+Noted this week is 
 * **NOT** about advanced techniques and skills for R studio
 * **NOT** about following each step and reproducing each result or graphs
 * about practice solving problems **on your own**
+* **Dont rush** doing this worksheet. 
+* Better way to use this worksheet: stop and think how you will do to find the soluation, how you want to approach the issue, and then move on.
+
+
 
 
 Learning objective:
 
-* To read error messages
-* available source to start search for your bug
-* examples
+* To use right sources and platform to search and debug
+* To locate problem
+* To formulate a "good" question
+
+
 
 
 
@@ -21,8 +27,8 @@ When see errors, do not panic.
 
 Coders/data scientists, fix errors and mistakes, all the time. Today, let s talk about how to troubleshoot yourself.
 
-
 After a while of coding, you will know how and where to start to fix the problem. Before that, you can try following general strategies to debug an error:
+
 
 
 1. **Google**
@@ -30,6 +36,7 @@ After a while of coding, you will know how and where to start to fix the problem
  * Many times it is a common error with a known solution. Sometime, even just copy paste your error message, you will find many people had the exactly issue like yours before.
  * Change a way to describe your problem if you cannot find the solution. 
  * Sometime, results from Google costs a lot of time to filter (particularly, when you ask in a not so good way), try other professional platforms, such as: stackoverflow, w3schools.com, codeproject.com
+
 
 2. **Go back to your dataset**
 
@@ -41,12 +48,16 @@ Just check your data, even it is readable and loadable.
  * Note which inputs don’t trigger the error
  * If not already done, write simple tests to reduce chances of creating a new bug
 
+
 3. **Figure out where the error is** 
  * Use the “scientific method”
  * Hypothesize, test with experiments, and record results
  * If needed, ask someone else for a second pair of eyes to review
 
-4. **Fix it and test it**
+4. **Dont be afraid of testing around**
+* Just try it
+
+
 
 
 These four steps should be followed each time you encounter an unexpected error in a function. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
@@ -62,10 +73,7 @@ These four steps should be followed each time you encounter an unexpected error 
 
 When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
 
-
 One question a student asked from last week: how to show a full range of coordinates.
-
-![a](./coordinator.png)
 
 ![a](coordinator.png)
 
@@ -73,22 +81,29 @@ why the coordinate does not show "2020"?
 
 Let s check the code 
 
-```
+```r
 ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
   geom_point(aes(colour =country)) +
   facet_grid(region ~ income) +
   labs(x="Year", y="GDP Per Capita Growth (annual %)",
        title='Faceting test', subtitle = 'Facet on both axes',
        colour="Country",
-       caption='World Development Indicators, World Bank')+
-  scale_x_continuous(breaks=seq(2000,2020,10))
+       caption='World Development Indicators, World Bank') +
+       scale_x_continuous(breaks=seq(2000,2020,10))
 ```
 
-If 
+So the problem is about the coordinate. Let s investigate line by line. Obviously, the first a few lines probably should be fine, as they are just indicate the data and set up titles. E.g., ```aes(year, NY.GDP.PCAP.KD.ZG)```, ``` x= ``` and ``` y= ``` just indicate data, should be fine. Similar for ```title=```, ```colour=``` and ```caption=```.
+
+So we initially focus on 
+Within the code, lines regarding coordinate are 
+``` scale_x_continuous(breaks=seq(2000,2020,10))
+```
+
+Let s dig into this line by just google it.
 
 Let's check the "year" in the original dataset. We sort the 
 
-![a](https://github.com/casszhao/INF4000.github.io/blob/main/coordinator.png)
+![a](screenshot_years.png)
 
 ## Case study: Fuction
 Next, let’s look at an example function.
