@@ -57,19 +57,22 @@ Just check your data, even it is readable and loadable.
 4. **Dont be afraid of testing around**
 * Just try it
 
-5. [**Rubber duck debugging**](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
-* explain your code to a rubber duck line by line
 
 
 
 
 
-These four steps should be followed each time you encounter an unexpected error in a function. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
+
+These steps should be followed each time you encounter an unexpected error. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
 
  * Begin running the code.
  * Stop the code where you suspect the bug/problem is arising.
  * If necessary, try removing the suspected line to see the changes in the result.
  * Look and/or walk through the code, step-by-step at that point.
+ * [**Rubber duck debugging**](https://en.wikipedia.org/wiki/Rubber_duck_debugging). Explain your code to a rubber duck line by line. It will suprise you sometime that you figure out the problem during the process when you talk to your duck. So time to amazon yourself a rubber duck.
+
+![a](rubbder_duck.jpg)
+
 
  This can be done ad-hoc in a separate R script containing the function code, or using several built-in tools in RStudio. 
 
