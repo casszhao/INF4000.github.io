@@ -125,7 +125,10 @@ Then you will find nothing change. Let s try ```scale_x_continuous(breaks=seq(19
 ```scale_x_continuous(breaks=seq(2000,2020,9))```
 ![a](screenshot_years2.png)
 
-Let's check the "year" in the original dataset. We sort the 
+Let's check the "year" in the original dataset. We sort the year by *oldest to newest* and then try by *newest to oldest*. 
+![a](screenshot_years.png)
+
+We can find out that there is no data in 2020 in the dataset. This is probably the reason why 2020 does not show up as ggplot2 does not show non-exist data on the coordinate, which does make sense. 
 
 
 
