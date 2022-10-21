@@ -13,6 +13,7 @@ Noted this week is
 
 
 
+
 Learning objective:
 
 * To use right sources and platform to search and debug
@@ -41,6 +42,10 @@ After a while of coding, you will know how and where to start to fix the problem
 2. **Go back to your dataset**
 
 Just check your data, even it is readable and loadable.
+
+**DONT MAKE CHANGE THE ORIGINAL DATA** 
+
+It is a good idea to suspect the original data 
         
        
 2. **Repeate it with simpler/smaller data**
@@ -143,8 +148,57 @@ Let's check the "year" in the original dataset (the second strategy, **Go back t
 We can find out that there is no data in 2020 in the dataset. This is probably the reason why 2020 does not show up as ggplot2 does not show non-exist data on the coordinate, which does make sense. 
 
 ### So what if we want to show the number even there is no data from that year?
-Google time. 
 
+What we do in such an troubleshooting situation?
+
+* if you already know the relevent function or package, you could go check the documentation to seek some inspiration
+* if not, ofc, it is[a](google.png)time !
+
+This time, let s try both ways just to practice.
+
+By checking the [documentation](https://ggplot2.tidyverse.org/reference/scale_continuous.html) for the function ```scale_x_continuous``` as we found above, we can see a detailed description for all the available arguments for ```scale_x_continuous```.
+
+[a](scale_documentation.png)
+[a](argumens.png)
+
+And we find a argument called ```limit```. It maybe the one we are looking for as we want to sort out the *limit* the coordinate shows. According to this documentation on *limit*:
+> A function that accepts the existing (automatic) limits and returns new limits. Also accepts rlang lambda function notation. Note that setting limits on positional scales will remove data outside of the limits. If the purpose is to zoom, use the limit argument in the coordinate system (see coord_cartesian()).
+
+As our purpose is kind of *to zoom*, so we go check the link for the limit argument as this part indicates. Then we find a perfect example. 
+[a](documentation_examples.png)
+
+In this example, after adding ```limits = c(325, 500)```, the coordinate *disp* shows the number *500*, even there is not data points within that range. That is exactly what we want: show 2020 even we do not have data points from year 2020.
+
+
+So we add the ```limits = c(2000, 2020)``` to ```scale_x_continuous```. Now we got 
+```r
+       scale_x_continuous(breaks=seq(2000,2020,10), limits = c(2000, 2020))
+```
+
+
+And the final code will be
+```r
+ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
+  geom_point(aes(colour =country)) +
+  facet_grid(region ~ income) +
+  labs(x="Year", y="GDP Per Capita Growth (annual %)",
+       title='Faceting test', subtitle = 'Facet on both axes',
+       colour="Country",
+       caption='World Development Indicators, World Bank') +
+       scale_x_continuous(breaks=seq(2000,2020,10), limits = c(2000, 2020))
+```
+Now we have the *2020* show up! Problem solved. Give yourself a pat on the back!
+
+[a](correction1.png)
+However, there is a overlapping between 2020 and 2000. To solve this, one solution is to make the gap between each facet wider. How to do that? Now it is your turn to find it out on you own. Of course, there maybe other solutions, feel free to try different methods. 
+
+## Practice, solve the overlapping issue. 
+
+
+[```xlim```](https://ggplot2.tidyverse.org/reference/lims.html)
+
+
+What keywords/sentenses you will use to google and find the solution
 
 
 
