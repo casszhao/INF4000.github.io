@@ -85,7 +85,7 @@ These steps cam be followed each time you encounter an unexpected error. Many ti
 
 
 ## 
-## Case study: Trouble shooting via testing around
+## Trouble shooting case study: fix a result
 ##
 
 When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
@@ -166,7 +166,7 @@ And we find a argument called ```limit```. It maybe the one we are looking for a
 > A function that accepts the existing (automatic) limits and returns new limits. Also accepts rlang lambda function notation. Note that setting limits on positional scales will remove data outside of the limits. If the purpose is to zoom, use the limit argument in the coordinate system (see coord_cartesian()).
 
 As our purpose is kind of *to zoom*, so we go check the link for the limit argument as this part indicates. Then we find a perfect example. 
-[a](documentation_examples.png)
+![a](documentation_examples.png)
 
 In this example, after adding ```limits = c(325, 500)```, the coordinate *disp* shows the number *500*, even there is not data points within that range. That is exactly what we want: show 2020 even we do not have data points from year 2020.
 
@@ -191,15 +191,16 @@ ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
 Now we have the *2020* show up! Problem solved. Give yourself a pat on the back!
 
 ![a](correction1.png)
-However, there is a overlapping between 2020 and 2000. To solve this, one solution is to make the gap between each facet wider. How to do that? Now it is your turn to find it out on you own. Of course, there maybe other solutions, feel free to try different methods. 
+However, there is a overlapping between 2020 and 2000. To solve this, one solution is to increase the spacing between faceted plots. This is, widen the space between. How to do that? Now it is your turn to find it out on you own. Of course, there maybe other solutions to show 2020, feel free to try different methods. 
 
 
 
 
-### Now we try the second method ![a](google.png)
+### Now we try the second way to solve our problem. Using ![a](google.png)
 What kind of keywords/sentences you would like to use to google for our problem? Please share your answer [here](https://docs.google.com/document/d/1ZnAuv5rBt2bRxbC_dT79xzw6EbDkajYpGLQock-xz7I/edit?usp=sharing).
 
-Let s try ![a](google.png) > How to change the coordinate limit in r studio
+Let s try ![a](google.png) this one I come up with.
+> How to change the coordinate limit in r studio
 
 Instead of searching *All* we search for *Images* to speed up our troubleshooting.
 
@@ -209,19 +210,18 @@ Let s check this image and go to the [website](https://www.datanovia.com/en/blog
 
 If you check this website, you will find that the page offers different methods to solve our problem, including using ```xlim``` and ```limits = ```. We leave it to you to explore and play around.
 
-
-## Practice: solve the overlapping issue. 
-
-
-## Case study: Fuction
-Next, let’s look at an example function.
+##
+## Practice: increase the spacing between faceted plots
+##
+An advanced requirement is, try only increasing the horizontal spacing, not the vertical spacing, since we just want to remove the overlapping between 2000 and 2020. The vertical space works very well for us. 
 
 
 
 
 
-
-## Case study: Trouble shooting with Google
+## 
+## Trouble shooting case study: fix a result
+##
 
 
 
