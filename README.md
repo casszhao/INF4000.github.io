@@ -69,7 +69,7 @@ It is a good idea to suspect the original data
 
 
 
-These steps should be followed each time you encounter an unexpected error. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
+These steps cam be followed each time you encounter an unexpected error. Many times, you may not even know what line of code the error is coming from. How can you determine where the code is not behaving? You can follow these general steps to answer this question:
 
  * Begin running the code.
  * Stop the code where you suspect the bug/problem is arising.
@@ -154,7 +154,7 @@ What we do in such an troubleshooting situation?
 * if you already know the relevent function or package, you could go check the documentation to seek some inspiration
 * if not, ofc, it is![a](google.png)time !
 
-This time, let s try both ways just to practice.
+This time, let s try both ways just to practice. We try the documentation first.
 
 By checking the [documentation](https://ggplot2.tidyverse.org/reference/scale_continuous.html) for the function ```scale_x_continuous``` as we found above, we can see a detailed description for all the available arguments for ```scale_x_continuous```.
 
