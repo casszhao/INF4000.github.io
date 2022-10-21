@@ -212,8 +212,10 @@ If you check this website, you will find that the page offers different methods 
 
 ##
 ## Practice: increase the spacing between faceted plots
-##
+
 An advanced requirement is, try only increasing the horizontal spacing, not the vertical spacing, since we just want to remove the overlapping between 2000 and 2020. The vertical space works very well for us. Example for the final result is shown as below. BUT, it is not the only one or the best one.
+
+
 ![a](final_casestudy1.png)
 
 
