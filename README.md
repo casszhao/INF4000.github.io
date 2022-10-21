@@ -142,7 +142,7 @@ Although "2020" does not show up, the range of years changes on the coordinate. 
 Now, we see 2018 shows up on the coordinate, as the interval changes to 9.
 
 
-Let's check the "year" in the original dataset (the second strategy, **Go back to your dataset**). We sort the year by *oldest to newest* and then try by *newest to oldest*. 
+Let's try the second strategy, **Go back to your dataset**. So we check the "year" in the original dataset. We sort the year by *oldest to newest* and then try by *newest to oldest*. 
 ![a](screenshot_years.png)
 
 We can find out that there is no data in 2020 in the dataset. This is probably the reason why 2020 does not show up as ggplot2 does not show non-exist data on the coordinate, which does make sense. 
@@ -152,14 +152,14 @@ We can find out that there is no data in 2020 in the dataset. This is probably t
 What we do in such an troubleshooting situation?
 
 * if you already know the relevent function or package, you could go check the documentation to seek some inspiration
-* if not, ofc, it is[a](google.png)time !
+* if not, ofc, it is![a](google.png)time !
 
 This time, let s try both ways just to practice.
 
 By checking the [documentation](https://ggplot2.tidyverse.org/reference/scale_continuous.html) for the function ```scale_x_continuous``` as we found above, we can see a detailed description for all the available arguments for ```scale_x_continuous```.
 
-[a](scale_documentation.png)
-[a](argumens.png)
+![a](scale_documentation.png)
+![a](argumens.png)
 
 And we find a argument called ```limit```. It maybe the one we are looking for as we want to sort out the *limit* the coordinate shows. According to this documentation on *limit*:
 > A function that accepts the existing (automatic) limits and returns new limits. Also accepts rlang lambda function notation. Note that setting limits on positional scales will remove data outside of the limits. If the purpose is to zoom, use the limit argument in the coordinate system (see coord_cartesian()).
