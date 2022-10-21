@@ -159,7 +159,7 @@ This time, let s try both ways just to practice. We try the documentation first.
 By checking the [documentation](https://ggplot2.tidyverse.org/reference/scale_continuous.html) for the function ```scale_x_continuous``` as we found above, we can see a detailed description for all the available arguments for ```scale_x_continuous```.
 
 ![a](scale_documentation.png)
-![a](argumens.png)
+![a](arguments.png)
 
 And we find a argument called ```limit```. It maybe the one we are looking for as we want to sort out the *limit* the coordinate shows. According to this documentation on *limit*:
 > A function that accepts the existing (automatic) limits and returns new limits. Also accepts rlang lambda function notation. Note that setting limits on positional scales will remove data outside of the limits. If the purpose is to zoom, use the limit argument in the coordinate system (see coord_cartesian()).
@@ -189,17 +189,27 @@ ggplot(country_data,aes(year, NY.GDP.PCAP.KD.ZG) ) +
 ```
 Now we have the *2020* show up! Problem solved. Give yourself a pat on the back!
 
-[a](correction1.png)
+![a](correction1.png)
 However, there is a overlapping between 2020 and 2000. To solve this, one solution is to make the gap between each facet wider. How to do that? Now it is your turn to find it out on you own. Of course, there maybe other solutions, feel free to try different methods. 
 
-## Practice, solve the overlapping issue. 
 
 
-[```xlim```](https://ggplot2.tidyverse.org/reference/lims.html)
+
+### Now we try the second method ![a](google.png)
+What kind of keywords/sentences you would like to use to google for our problem? Please share your answer [here](https://docs.google.com/document/d/1ZnAuv5rBt2bRxbC_dT79xzw6EbDkajYpGLQock-xz7I/edit?usp=sharing).
+
+Let s try ![a](google.png) > How to change the coordinate limit in r studio
+
+Instead of searching *All* we search for *Images* to speed up our troubleshooting.
+
+![a](search_example.png)
+
+Let s check this image and go to the [website](https://www.datanovia.com/en/blog/ggplot-axis-limits-and-scales/) using this image.
+
+If you check this website, you will find that the page offers different methods to solve our problem, including using ```xlim``` and ```limits = ```. We leave it to you to explore and play around.
 
 
-What keywords/sentenses you will use to google and find the solution
-
+## Practice: solve the overlapping issue. 
 
 
 ## Case study: Fuction
