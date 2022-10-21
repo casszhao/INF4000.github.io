@@ -159,6 +159,7 @@ This time, let s try both ways just to practice. We try the documentation first.
 By checking the [documentation](https://ggplot2.tidyverse.org/reference/scale_continuous.html) for the function ```scale_x_continuous``` as we found above, we can see a detailed description for all the available arguments for ```scale_x_continuous```.
 
 ![a](scale_documentation.png)
+
 ![a](arguments.png)
 
 And we find a argument called ```limit```. It maybe the one we are looking for as we want to sort out the *limit* the coordinate shows. According to this documentation on *limit*:
