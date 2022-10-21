@@ -54,6 +54,7 @@ Just check your data, even it is readable and loadable.
  * Hypothesize, test with experiments, and record results
  * If needed, ask someone else for a second pair of eyes to review
 
+
 4. **Dont be afraid of testing around**
 * Just try it
 
@@ -75,12 +76,12 @@ These steps should be followed each time you encounter an unexpected error. Many
 
 
 
-
+## 
 ## Case study: Trouble shooting via testing around
 
 When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
 
-One question a student asked from last week: 
+### One question a student asked from last week: 
 
 > why the coordinate does not show "2020"?
 
@@ -115,14 +116,18 @@ We go back to [WEEK 4 material](https://vle.shef.ac.uk/webapps/blackboard/conten
 After read this, we probably further confirm that ```scale_x_continuous``` is where we should look at. 
 Let s further dig into this line/argument by just googling it --> ["scale_x_continuous"]([https://www.google.com/search?q=scale_x_continuous(breaks%3Dseq(2000%2C2020%2C10))&oq=scale_x_continuous(breaks%3Dseq(2000%2C2020%2C10))&aqs=chrome.0.69i59.425j0j7&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=scale_x_continuous&sxsrf=ALiCzsZ0siBuC0xWiandh7D2MpLGYriRyA%3A1666300368588&ei=0LlRY7W1I_iE9u8Py8uA-A0&ved=0ahUKEwi13bvM3O_6AhV4gv0HHcslAN8Q4dUDCA8&uact=5&oq=scale_x_continuous&gs_lp=Egdnd3Mtd2l6uAED-AEC-AEBMgQQIxgnMgQQABhDMgQQABhDMgQQABhDMgQQABhDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI1wVQAFgAcAB4AcgBAJABAJgBXqABXqoBATHiAwQgTRgB4gMEIEEYAOIDBCBGGACIBgE&sclient=gws-wiz))
 
-We go for the first result retrieved (It is possible that you have got something else as your first returned result. It does not matter, what we want is to know more about scale_x_continuous). This leads us to the ggplot2 documentation. PERFECT. Conventionally, **a documentation is the most official introduction for a function/package. And it is usually one of the most comprehensive one.**
+We go for the first result retrieved (It is possible that you have got something else as your first returned result. It does not matter, what we want is to know more about scale_x_continuous). This leads us to the ggplot2 documentation. PERFECT. 
+
+Conventionally, **a documentation is the most official introduction for a function/package. And it is usually one of the most comprehensive one.**
 
 Now, maybe we can try scaling up the range of the coordinate to see if 2020 will show up.
 Let s try ```scale_x_continuous(breaks=seq(2000,2022,10))``` instead of ```scale_x_continuous(breaks=seq(2000,2020,10))```
 Then you will find nothing change. Let s try ```scale_x_continuous(breaks=seq(1998,2022,10))``` Now something changes.
+
 ![a](screenshot_years1.png)
 
-```scale_x_continuous(breaks=seq(2000,2020,9))```
+Although "2020" does not show up, the range of years changes on the coordinate. It shows earlier years although it does not show the number. This is a similar issue as what we are looking at: why the coordinate does not show the number? Let s try modifying a different variable, the indicator for the interval (the third digit in the bracket) rather than the start and end (the strategy of the 3rd point: only change a tiny part of your code each time to test, to figure out where is the problem). So let s try  ```scale_x_continuous(breaks=seq(2000,2020,9))```
+
 ![a](screenshot_years2.png)
 
 Let's check the "year" in the original dataset. We sort the year by *oldest to newest* and then try by *newest to oldest*. 
