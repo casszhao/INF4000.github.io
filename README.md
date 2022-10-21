@@ -76,8 +76,12 @@ These steps should be followed each time you encounter an unexpected error. Many
 
 
 
+
+
+
 ## 
 ## Case study: Trouble shooting via testing around
+##
 
 When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
 
@@ -126,14 +130,21 @@ Then you will find nothing change. Let s try ```scale_x_continuous(breaks=seq(19
 
 ![a](screenshot_years1.png)
 
-Although "2020" does not show up, the range of years changes on the coordinate. It shows earlier years although it does not show the number. This is a similar issue as what we are looking at: why the coordinate does not show the number? Let s try modifying a different variable, the indicator for the interval (the third digit in the bracket) rather than the start and end (the strategy of the 3rd point: only change a tiny part of your code each time to test, to figure out where is the problem). So let s try  ```scale_x_continuous(breaks=seq(2000,2020,9))```
+Although "2020" does not show up, the range of years changes on the coordinate. It shows earlier years although it does not show the number. This is a similar issue as what we are looking at: why the coordinate does not show the number? Let s try modifying a different variable, the indicator for the interval (the third digit in the bracket, let s modify it from *10* to *9*) rather than the start and end (the 3rd strategy, **Figure out where the error is**). So let s try  ```scale_x_continuous(breaks=seq(2000,2020,9))```
 
 ![a](screenshot_years2.png)
 
-Let's check the "year" in the original dataset. We sort the year by *oldest to newest* and then try by *newest to oldest*. 
+Now, we see 2018 shows up on the coordinate, as the interval changes to 9.
+
+
+Let's check the "year" in the original dataset (the second strategy, **Go back to your dataset**). We sort the year by *oldest to newest* and then try by *newest to oldest*. 
 ![a](screenshot_years.png)
 
 We can find out that there is no data in 2020 in the dataset. This is probably the reason why 2020 does not show up as ggplot2 does not show non-exist data on the coordinate, which does make sense. 
+
+### So what if we want to show the number even there is no data from that year?
+Google time. 
+
 
 
 
