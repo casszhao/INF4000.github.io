@@ -258,6 +258,7 @@ p + geom_violin()                              # define plot type
 ```
 We got the draft plot. As shown in the plot, AUTOMATED_MANUAL is getting popular. Any other patterns you have identified? Of course, there is room for us to optimize the plot. For example, adding colors, adjust the Year axis to make it more readable. The current version is difficult to tell years between. 
 
+![a](violin_car.png)
 
 ---
 ---
@@ -270,7 +271,7 @@ Wordcloud is an intuitive way to show the high frequency words in a text. The mo
 
 ![a](wordcloud.png)
 
-
+---
 ---
 ## Other useful links
 * [Hands-On Programming with R](https://rstudio-education.github.io/hopr/debug.html)
