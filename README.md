@@ -1,4 +1,6 @@
-# INF4000 Week 5: 
+# Week 5: 
+
+[cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 # Trouble shooting with Google: where the programming starts
 ![a](https://github.com/casszhao/INF4000.github.io/raw/main/debugging.jpg)
 
@@ -84,9 +86,10 @@ These steps cam be followed each time you encounter an unexpected error. Many ti
 
 
 
-## 
+---
+---
 ## Trouble shooting case study: fix a result
-##
+
 
 When debugging, do not afraid trying or playing around. Sometime you solve the problem unintentionally when you play around.
 
@@ -210,21 +213,20 @@ Let s check this image and go to the [website](https://www.datanovia.com/en/blog
 
 If you check this website, you will find that the page offers different methods to solve our problem, including using ```xlim``` and ```limits = ```. We leave it to you to explore and play around.
 
-##
+---
 ## Practice: increase the spacing between faceted plots
 
 An advanced requirement is, try only increasing the horizontal spacing, not the vertical spacing, since we just want to remove the overlapping between 2000 and 2020. The vertical space works very well for us. Example for the final result is shown as below. BUT, it is not the only one or the best one.
 
 
 ![a](final_casestudy1.png)
+---
 
 
 
 
-
-## 
-## Trouble shooting case study: create a image from scrach
-##
+---
+## Trouble shooting case study: create a visualisation from scrach
 
 
 
@@ -238,28 +240,27 @@ Let s say you want to present the time distribution of your data via a nice visu
 <img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazInstr_vio.png" width="400" align="left" alt="My Image"/>
 <img src="https://github.com/casszhao/INF4000.github.io/blob/main/agnews_vio.png" width="400" align="left" alt="My Image"/>
 
-##
-
-If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
 
 
-
-
-cheatsheet for [github pages](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[^1]: If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
 
 
 
---> search
---> world cloud
---> how to do world cloud
+
+---
+## Practice: create a wordcloud
+
+After check the [paper](https://arxiv.org/pdf/2210.09197.pdf), you find the wordcloud is very interesting. 
 
 
-https://r4ds.had.co.nz/data-visualisation.html
+Wordcloud is an intuitive way to show the high frequency words in a text. The more frequent a word it is, the bigger it is in a wordcloud. It is also conventionally believed that a wordcloud indicates the potential topic for a text. You decide to build a wordcloud for your INF4000 assignment brief to see if it indicates any key points to gain a good mark. 
 
-- 
+![a](wordcloud.png)
 
+
+---
 ## Other useful links
-* [Hands-On Programming with R(]https://rstudio-education.github.io/hopr/debug.html)
+* [Hands-On Programming with R](https://rstudio-education.github.io/hopr/debug.html)
 * [A case study in debugging R](https://github.com/karawoo/2019-01-17-rstudioconf/blob/master/woo_rstudioconf_2019.pdf)
 * [Debugging R Code](https://rstats.wtf/debugging-r-code.html)
 * [Advanced R debugging](https://adv-r.hadley.nz/debugging.html)
