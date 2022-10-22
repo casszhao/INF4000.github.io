@@ -231,7 +231,7 @@ An advanced requirement is, try only increasing the horizontal spacing, not the 
 ## Trouble shooting case study: create a visualisation from scrach
 
 
-In this case study, we will try to build a visualisation/plot we do not know how before. It is usually the case that you have the data, you have the topic, you have some fuzzy ideas what you want to present or communicate to readers, you go browsing online to get some inspiration, you find something that can be used to present your data and your idea. However, you never plot things like this before. So let see how we learn to create it from scratch. 
+In this case study, we will try to build a visualisation/plot we do not know how before. It is usually the case that you have the data, you have the topic, you have some fuzzy ideas about what you want to present or communicate to readers, you go browsing online to get some inspiration, you find something that can be used to present your data and your idea. However, you never plot things like this before. So let see how we learn to create it from scratch. 
 
 You are a good student, you want to prepare your INF4000 coursework now even the due is in January. So you go [Kaggle](https://www.kaggle.com/datasets) as suggested in the coursework brief and find this [car](https://www.kaggle.com/datasets/CooperUnion/cardataset) dataset interesting. 
 
@@ -240,13 +240,9 @@ You are a good student, you want to prepare your INF4000 coursework now even the
 You decide to use this dataset as your data source. You want to explore the factors to the popularity of a car model. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram (as the kaggle default one shown in the screenshot), you want to show the marker a different plot and also you want to embed other variables to the plot, such as the brand and the engine fuel. And you find someone did this[^1]. 
  
 
-![a](yelp_vio.png)
-![a](xfact_vio.png)
-![a](AmazDigiMu_vio.png)
-![a](AmazPantry_vio.png)
-![a](AmazInstr_vio.png)
-![a](agnews_vio.png)
+![a](violin_plot.png)
 
+As shown in the plot, the y axis shows the years, the x axis shows the year/time distribution in different data split. 
 
 
 [^1]: If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
@@ -258,7 +254,7 @@ You decide to use this dataset as your data source. You want to explore the fact
 ---
 ## Practice: create a wordcloud
 
-After check the [paper](https://arxiv.org/pdf/2210.09197.pdf), you find the wordcloud is very interesting. 
+After check the [paper](https://arxiv.org/pdf/2210.09197.pdf), you find the wordcloud, Figure 4, is very interesting. 
 
 
 Wordcloud is an intuitive way to show the high frequency words in a text. The more frequent a word it is, the bigger it is in a wordcloud. It is also conventionally believed that a wordcloud indicates the potential topic for a text. You decide to build a wordcloud for your INF4000 assignment brief to see if it indicates any key points to gain a good mark. 
