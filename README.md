@@ -233,12 +233,13 @@ An advanced requirement is, try only increasing the horizontal spacing, not the 
 
 Let s say you want to present the time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
 
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/yelp_vio.png" width="400" align="left" alt="My Image"/>
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/xfact_vio.png" width="400" align="left" alt="My Image"/>
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazDigiMu_vio.png" width="400" align="left" alt="My Image"/>
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazPantry_vio.png" width="400" align="left" alt="My Image"/>
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/AmazInstr_vio.png" width="400" align="left" alt="My Image"/>
-<img src="https://github.com/casszhao/INF4000.github.io/blob/main/agnews_vio.png" width="400" align="left" alt="My Image"/>
+![a](yelp_vio.png)
+![a](xfact_vio.png)
+![a](AmazDigiMu_vio.png)
+![a](AmazPantry_vio.png)
+![a](AmazInstr_vio.png)
+![a](agnews_vio.png)
+
 
 
 
