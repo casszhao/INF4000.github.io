@@ -225,13 +225,16 @@ An advanced requirement is, try only increasing the horizontal spacing, not the 
 
 
 
+
+---
 ---
 ## Trouble shooting case study: create a visualisation from scrach
 
 
+In this case study, we will try to build a visualisation/plot we do not know how before. It is usually the case that you have the data, you have the topic, you have some fuzzy ideas what you want to present or communicate to readers, you go browsing online to get some inspiration, you find something that can be used to present your data and your idea. However, you never plot things like this before. So let see how we learn to create it from scratch. 
 
-
-Let s say you want to present the time distribution of your data via a nice visualisation. And you find a good reference that you want to do something similar with your data. 
+You are a good student, you want to prepare your INF4000 coursework now even the due is in January. So you go [Kaggle](https://www.kaggle.com/datasets) as suggested in the coursework brief and find this [car]() dataset interesting. You decide to use this dataset as your data source. You want to explore the factors to the popularity of a car model. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram, you want to show the marker a different plot. And you find someone did this[^1]. 
+ 
 
 ![a](yelp_vio.png)
 ![a](xfact_vio.png)
@@ -239,7 +242,6 @@ Let s say you want to present the time distribution of your data via a nice visu
 ![a](AmazPantry_vio.png)
 ![a](AmazInstr_vio.png)
 ![a](agnews_vio.png)
-
 
 
 
