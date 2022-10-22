@@ -233,7 +233,11 @@ An advanced requirement is, try only increasing the horizontal spacing, not the 
 
 In this case study, we will try to build a visualisation/plot we do not know how before. It is usually the case that you have the data, you have the topic, you have some fuzzy ideas what you want to present or communicate to readers, you go browsing online to get some inspiration, you find something that can be used to present your data and your idea. However, you never plot things like this before. So let see how we learn to create it from scratch. 
 
-You are a good student, you want to prepare your INF4000 coursework now even the due is in January. So you go [Kaggle](https://www.kaggle.com/datasets) as suggested in the coursework brief and find this [car]() dataset interesting. You decide to use this dataset as your data source. You want to explore the factors to the popularity of a car model. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram, you want to show the marker a different plot. And you find someone did this[^1]. 
+You are a good student, you want to prepare your INF4000 coursework now even the due is in January. So you go [Kaggle](https://www.kaggle.com/datasets) as suggested in the coursework brief and find this [car](https://www.kaggle.com/datasets/CooperUnion/cardataset) dataset interesting. 
+
+![a](dataset.png)
+
+You decide to use this dataset as your data source. You want to explore the factors to the popularity of a car model. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram (as the kaggle default one shown in the screenshot), you want to show the marker a different plot and also you want to embed other variables to the plot, such as the brand and the engine fuel. And you find someone did this[^1]. 
  
 
 ![a](yelp_vio.png)
@@ -250,6 +254,7 @@ You are a good student, you want to prepare your INF4000 coursework now even the
 
 
 
+---
 ---
 ## Practice: create a wordcloud
 
