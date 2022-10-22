@@ -249,7 +249,15 @@ As shown in the plot, the y-axis shows the years, the x-axis shows the year/time
 So we use the image search again as we did above. By searching "Rstudio distribution plot"(Feel free to use the inquiry you like; I believe you definitely come up with something better), we find something like this.
 ![a](violin_search.png)
 
-Although the page provides solution in python rather than r, at least we find out this kind of plot is called violin plot. So we optimise our search by adding "violin plot". If you follow me to this point, you possibly have already find a solution. Let s see my search result first. 
+Although the page provides solution in python rather than r, at least we find out this kind of plot is called violin plot. So we optimise our search by adding "violin plot". If you follow me to this point, you possibly have already find a solution. Let s see my search [result](https://r-graph-gallery.com/95-violin-plot-with-ggplot2.html) first. The code is really simple. We convert it to our data. 
+```r
+car <- read.csv("~/R/wee5/data.csv") # load in our data
+library(ggplot2)                     # load ggplot2
+p <- ggplot(car, aes(Transmission.Type, Year)) # define data and axis
+p + geom_violin()                              # define plot type
+```
+We got the draft plot. As shown in the plot, AUTOMATED_MANUAL is getting popular. Any other patterns you have identified? Of course, there is room for us to optimize the plot. For example, adding colors, adjust the Year axis to make it more readable. The current version is difficult to tell years between. 
+
 
 ---
 ---
