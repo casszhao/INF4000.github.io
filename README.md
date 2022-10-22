@@ -237,18 +237,19 @@ You are a good student, you want to prepare your INF4000 coursework now even the
 
 ![a](dataset.png)
 
-You decide to use this dataset as your data source. You want to explore the factors to the popularity of a car model. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram (as the kaggle default one shown in the screenshot), you want to show the marker a different plot and also you want to embed other variables to the plot, such as the brand and the engine fuel. And you find someone did this[^1]. 
+You decide to use this dataset as your data source and your topic is to explore the trend of cars these year. First you want to show the release date distribution for car models, to confirm if there are easy-to-spot some bias or potential pattern. Instead of traditional histogram (as the kaggle default one shown in the screenshot), you want to show the marker a different plot and also you want to embed one more variables in the plot, such as the brand, the vehicle size and the transmission type. And you find someone did this[^1]. 
  
 
 ![a](violin_plot.png)
 
-As shown in the plot, the y axis shows the years, the x axis shows the year/time distribution in different data split. 
-
+As shown in the plot, the y-axis shows the years, the x-axis shows the year/time distribution of data points in different data split. In our case, we can use the x-axis to show the other variable, such as the brand, the vehicle size and the transmission type.
 
 [^1]: If you are interested in our new [paper](https://arxiv.org/pdf/2210.09197.pdf), welcome to check out.
 
+So we use the image search again as we did above. By searching "Rstudio distribution plot"(Feel free to use the inquiry you like; I believe you definitely come up with something better), we find something like this.
+![a](violin_search.png)
 
-
+Although the page provides solution in python rather than r, at least we find out this kind of plot is called violin plot. So we optimise our search by adding "violin plot". If you follow me to this point, you possibly have already find a solution. Let s see my search result first. 
 
 ---
 ---
