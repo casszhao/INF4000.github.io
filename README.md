@@ -1,6 +1,5 @@
 # Week 5: 
 
-[cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 # Trouble shooting with Google: where the programming starts
 ![a](https://github.com/casszhao/INF4000.github.io/raw/main/debugging.jpg)
 
